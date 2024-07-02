@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Booking</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                Quick Wheels
+            </div>
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#service">Services</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="button-container">
+                <a href="./booking/login.html"><button class="cta-button">Login</button></a>
+                <a href="./booking/signup.html"><button class="cta-button1">Sign up</button></a>
+            </div>
+            
+        </div>
+    </header>
+<!--------------------------------------------------- hero  ---------------------------------------------------->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1 class="hero-heading">Effortless Transportation at Your Fingertips</h1>
+        <p class="hero-subheading">Book taxis, buses, cars, and Tata Aces conveniently online.</p>
+        <button class="cta-button-1" onclick="openPopup()">Sign up as Driver</button>
+    </div>
+    <div class="hero-image">
+        <img src="./img/h3.jpeg" alt="">
+        <div class="hero-image3">
+            <img src="./img/h5.jpeg" alt="" width="40%" height="40%">
+        </div>
+    </div>
+    <div class="hero-image2">
+        <img src="./img/h4.jpeg" alt="">
+    </div>
+</section>
+    
+ <!-- Popup Form -->
+ <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2 style="font-size: 30px;">Sign up as Driver</h2>
+        <form class="driver-signup-form">
+            <div class="input-group">
+                <input type="text" id="driver-name" name="driver-name" placeholder="Enter Full Name" style="font-size: 17px;" required>
+            </div>
+            <div class="input-group">
+                <select id="driver-city" name="driver-city" style="font-size: 17px; "  placeholder="Select Your City" required>
+                    <option  value="" style="color:#6e6e6e;" disabled selected>Select Your City</option>
+                    <option value="Chennai" >Chennai</option>
+                    <option value="Coimbatore">Coimbatore</option>
+                    <option value="Bangalore">Bangalore</option>
+                    <!-- Add more cities as needed -->
+                </select>
+            </div>
+            <div class="input-group">
+                <select id="driver-referral" name="driver-referral" style="font-size: 17px; " required>
+                    <option value="" disabled selected>How did you find us?</option>
+                    <option value="Facebook">Facebook</option>
+                    <option value="Instagram">Instagram</option>
+                    <option value="Google Ads">Google Ads</option>
+                    <option value="Banner">Banner</option>
+                    <option value="Friends">Friends</option>
+                </select>
+            </div>
+            <div class="radio-group" >
+                <label style="font-size: 17px;">Do you have a valid driving license?</label>
+                <div class="radio-group2" style="font-size: 17px;">
+                    <input type="radio" id="license-yes" name="driver-license-valid" value="yes" style="font-size: 17px;" required>
+                    <label for="license-yes">Yes</label>
+                    <input type="radio" id="license-no" name="driver-license-valid" value="no" style="font-size: 17px;" required>
+                    <label for="license-no">No</label>
+                </div>
+            </div>
+            <div class="input-group1">
+                <input type="text" id="driver-phone" name="driver-phone" placeholder="Enter Phone Number" style="font-size: 17px;" required>
+            <!-- </div> -->
+            <!-- <div class="input-group"> -->
+                <button type="button" class="cta-button3" onclick="sendOtp()">Get OTP</button>
+            </div>
+            <div class="input-group">
+                <input type="text" id="driver-otp" name="driver-otp" placeholder="Enter OTP" style="font-size: 17px;" required>
+            </div>
+            <button type="submit" class="cta-button2" style="font-size: 17px;">Submit</button>
+        </form>
+    </div>
+</div>
+
+<!------------------------------------------------ service  ---------------------------------------------->
+
+    <section class="services" id="service">
+        <h2 class="services-heading">Our Services</h2>
+        <div class="container">
+            <div class="service">
+                <img src="./img/taxi.jpg" alt="Taxi Service" class="service-icon">
+                <h3> <i class='bx bxs-taxi '></i> Taxi Service</h3>
+                <p>Convenient and affordable taxi services for all your travel needs.</p>                
+                <a href="./booking/taxi.html" ><button class="cta-button">Book Now</button></a>
+            </div>
+            <div class="service">
+                <img src="./img/bus.jpg" alt="Bus Service" class="service-icon">
+                <h3><i class='bx bxs-bus' ></i> Auto Service</h3>
+                <p>Comfortable and reliable Auto services for group travels.</p>
+                <a href="./booking/bus.html" ><button class="cta-button btn1">Book Now</button></a>
+            </div>
+            <div class="service">
+                <img src="./img/bike.jpg" alt="Car Service" class="service-icon">
+                <h3><i class='bx bx-cycling' ></i> Bike Service</h3>
+                <p>Luxurious car services for your special occasions.</p>
+                <a href="./booking/bike.html" ><button class="cta-button btn2">Book Now</button></a>
+            </div>
+            <div class="service">
+                <img src="./img/ace.jpg" alt="Tata Ace Service" class="service-icon">
+                <h3><i class='bx bxs-truck' ></i> Tata Ace Service</h3>
+                <p>Efficient and reliable Tata Ace services for small cargo.</p>
+                <a href="./booking/ace.html" > <button class="cta-button btn3">Book Now</button></a>
+            </div>
+        </div>
+    </section>
+<!---------------------------------------------------------- how it works  ----------------------------------------------------->
+<section class="how-it-works" id="how-it-works">
+    <h2 class="how-it-works-heading">How It Works</h2>
+    <div class="container">
+        <div class="steps">
+            <div class="step">
+                <!-- <img src="./img/step1-icon.png" alt="Step 1" class="step-icon"> -->
+                <h3><i class='bx bxs-message-alt-add' ></i> Select Your Ride</h3>
+                <p>Choose from a variety of vehicles to suit your travel needs.</p>
+            </div>
+            <div class="step">
+                <!-- <img src="./img/step2-icon.png" alt="Step 2" class="step-icon"> -->
+                <h3><i class='bx bxs-detail' ></i> Enter Details</h3>
+                <p>Provide your pickup location, destination, date, and time.</p>
+            </div>
+            <div class="step">
+                <!-- <img src="./img/step3-icon.png" alt="Step 3" class="step-icon"> -->
+                <h3><i class='bx bxs-select-multiple' ></i> Confirm Booking</h3>
+                <p>Review your booking details and confirm your ride.</p>
+            </div>
+            <div class="step">
+                <!-- <img src="./img/step4-icon.png" alt="Step 4" class="step-icon"> -->
+                <h3><i class='bx bxs-happy-beaming' ></i> Enjoy Your Ride</h3>
+                <p>Relax and enjoy your journey with our reliable service.</p>
+            </div>
+        </div>
+        <!-- <button class="cta-button">Start Booking</button> -->
+    </div>
+</section>
+
+
+<!-------------------------------------------------------- Why Choose Us ------------------------------------------------------>
+<img src="./img/bike1.png" alt="" width="155px" height="155px" class="imgrun">
+
+<section class="why-choose-us" id="why-choose-us">
+    <h2 class="section-heading">Why Choose Us</h2>
+    <div class="container">
+        <div class="unique-selling-points">
+            <div class="point">
+                <i class="fas fa-clock"></i>
+                <h3>24/7 Availability</h3>
+                <p>We're available round the clock to meet your transportation needs.</p>
+            </div>
+            <div class="point">
+                <i class="fas fa-hand-holding-usd"></i>
+                <h3>Competitive Pricing</h3>
+                <p>Enjoy competitive pricing without compromising on quality service.</p>
+            </div>
+            <div class="point">
+                <i class="fas fa-car"></i>
+                <h3>Comfortable Vehicles</h3>
+                <p>Travel in comfort with our modern and well-maintained vehicles.</p>
+            </div>
+            <div class="point">
+                <i class="fas fa-user-tie"></i>
+                <h3>Professional Drivers</h3>
+                <p>Our drivers are trained professionals committed to your safety and satisfaction.</p>
+            </div>
+        </div>
+        <div class="testimonials">
+            <div class="testimonial">
+                <img src="./img/customer1.jpg" alt="Customer 1">
+                <p>"Excellent service! Prompt and courteous drivers. Highly recommended!"</p>
+                <cite>- John Doe</cite>
+            </div>
+            <div class="testimonial">
+                <img src="./img/customer2.jpg" alt="Customer 2">
+                <p>"Great experience! Comfortable ride and friendly staff."</p>
+                <cite>- Jane Smith</cite>
+            </div>
+        </div>
+        <div class="trust-badges">
+            <img src="./img/badge1.jpg" alt="Badge 1">
+            <img src="./img/badge2.jpg" alt="Badge 2">
+        </div>
+    </div>
+</section>
+
+
+<!------------------------------------------------------------ Featured Destinations ------------------------------------------------------->
+
+<section class="featured-destinations" style="margin-top: 0px;">
+    <h2 class="section-heading" >Featured Destinations</h2>
+    <div class="container">
+        <div class="destination">
+            <img src="./img/destination1.jpg" alt="Destination 1">
+            <div class="destination-info">
+                <h3>Chennai City</h3>
+                <p>Experience the hustle and bustle of the Big Apple. Visit iconic landmarks like Times Square, Central Park, and the Statue of Liberty.</p>
+                <a href="#" class="cta-button" style="text-decoration: none;">Book Now</a>
+            </div>
+        </div>
+        <div class="destination">
+            <img src="./img/destination2.jpg" alt="Destination 2">
+            <div class="destination-info">
+                <h3>Coimbatore</h3>
+                <p>Discover the romance of Paris with its stunning architecture, world-class cuisine, and renowned art museums like the Louvre.</p>
+                <a href="#" class="cta-button" style="text-decoration: none;">Book Now</a>
+            </div>
+        </div>
+        <!-- Add more destination elements as needed -->
+    </div>
+</section>
+
+
+<!--------------------------------------------------------------------- footer  ------------------------------------------------------------------>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-section contact-info">
+            <h3>Contact Information</h3>
+            <p>Phone: +1 234 567 890</p>
+            <p>Email: info@example.com</p>
+            <p>Address: 1234 Street Name, City, State, Country</p>
+        </div>
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section social-media">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="#"><i class='bx bxl-linkedin'></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-section newsletter">
+            <h3>Newsletter Signup</h3>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="cta-button">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>

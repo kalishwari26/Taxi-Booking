@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taxi Booking Form</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./taxi.css">
+</head>
+<body>
+    <div class="container">
+        <section class="background-gif">
+        </section>
+        
+        <section class="card" >
+            <a href="/index.html" style="text-decoration: none; color: black; font-size: 20px;"><i class='bx bx-left-arrow-circle' ></i></a>
+            <h2 class="booking-heading2"><i class='bx bxs-taxi'></i>Book A Taxi <i class='bx bxs-taxi'></i> </h2>
+            <div class="taxi-booking">
+                <form class="booking-form">
+                    <label for="pickup-location">Pickup Location</label>
+                    <input type="text" id="pickup-location" name="pickup-location" placeholder="Enter Pickup Location" required>
+                    
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter Destination" required>
+
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="date" required>
+                    
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="time" required>
+
+                    <button type="submit" class="cta-button">Book Now <i class='bx bx-exit'></i></button>
+                </form>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

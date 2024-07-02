@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+.container {
+    background-color: #fff;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-gif {
+    flex: 1;
+    background-image: url('../img/truckvedio2.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.card {
+    margin-top: 8%;
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 30%;
+    height: 68%;
+    padding: 20px;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    background-color: #3430c1;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.tata-ace-booking {
+    flex: 1;
+    padding: 20px;
+}
+
+.booking-heading {
+    margin-top: 0;
+    margin-left: 25%;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.booking-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.booking-form label {
+    font-size: 1em;
+    margin-bottom: 5px;
+    text-align: left;
+    color: white;
+}
+
+.booking-form input {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.booking-form input:focus {
+    border-color: black;
+    outline: none;
+}
+
+.cta-button {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #908d8b;
+}

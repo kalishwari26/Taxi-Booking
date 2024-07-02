@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking Form</title>
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="./bus.css">
+</head>
+<body>
+    <div class="container">
+        <section class="card">
+            <a href="/index.html" style="text-decoration: none; color: black; font-size: 20px;"><i class='bx bx-left-arrow-circle' ></i></a>
+
+            <h2 class="booking-heading"><i class='bx bxs-bus'></i> Book a Bus <i class='bx bxs-bus'></i> </h2>
+            <div class="bus-booking">
+            <form class="booking-form">
+                <label for="pickup-location">Pickup Location</label>
+                <input type="text" id="pickup-location" name="pickup-location" placeholder="Enter Pickup Location" required>
+
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" name="destination" placeholder="Enter Destination" required>
+
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="num-passengers">Number of Passengers</label>
+                <input type="number" id="num-passengers" name="num-passengers" placeholder="Enter Number of Passengers" required>
+
+                <button type="submit" class="cta-button">Book Now <i class='bx bx-exit'></i></button>
+            </form>
+        </div>
+        </section>
+        <section class="background-gif"></section>
+
+    </div>
+</body>
+</html>
